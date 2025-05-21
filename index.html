@@ -1,33 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ClimaApp Turbo 🚀</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClimaApp Turbo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>ClimaApp Turbo 🚀</h1>
-
-    <div class="search-area">
-      <input type="text" id="cityInput" placeholder="Digite a cidade..." />
-      <button id="searchBtn">Buscar</button>
-      <button id="locationBtn" title="Usar localização atual">📍</button>
-      <select id="unitSelect" title="Unidades">
-        <option value="metric">Celsius (°C)</option>
-        <option value="imperial">Fahrenheit (°F)</option>
-        <option value="standard">Kelvin (K)</option>
-      </select>
-    </div>
-
-    <div id="errorMsg" class="error-msg"></div>
-    <div id="loading" style="display:none;">Carregando...</div>
-
-    <div id="weatherContainer" class="weather-container"></div>
-    <div id="forecastContainer" class="forecast-container"></div>
+    <h1>ClimaApp Turbo</h1>
+    <input type="text" id="cityInput" placeholder="Digite a cidade">
+    <button id="searchBtn">Buscar Clima</button>
+    <div id="weatherResult"></div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
