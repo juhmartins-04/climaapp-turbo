@@ -1,0 +1,176 @@
+/* Reset e básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 100vh;
+  transition: background-image 0.8s ease-in-out;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(0,0,0,0.4);
+  border-radius: 10px;
+  padding: 25px 30px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.search-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.search-area input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.search-area button, .search-area select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.search-area button:hover, .search-area select:hover {
+  background: #0056b3;
+}
+
+.error-msg {
+  color: #ff6b6b;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+#loading {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Weather atual */
+.weather-container {
+  margin-top: 20px;
+}
+
+.weather-container h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.weather-container p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.weather-container img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Forecast */
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.forecast-day {
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 90px;
+  margin-right: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.forecast-day p {
+  margin: 5px 0;
+}
+
+.forecast-day img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .forecast-day {
+    flex: 0 0 70px;
+    font-size: 12px;
+  }
+
+  .weather-container img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .search-area input[type="text"] {
+    font-size: 14px;
+  }
+
+  .search-area button, .search-area select {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+
+/* Backgrounds dinâmicos */
+body.sunny {
+  background-image: url('images/ceu_limpo.jpg');
+}
+
+body.rainy {
+  background-image: url('images/chuva.jpg');
+}
+
+body.cloudy {
+  background-image: url('images/nublado.jpg');
+}
+
+body.stormy {
+  background-image: url('images/tempestade.jpg');
+}
+
+body.snowy {
+  background-image: url('images/neve.jpg');
+}
+
+body.foggy {
+  background-image: url('images/neblina.jpg');
+}
+
+body.default {
+  background-image: url('images/padrao.jpg');
+}
