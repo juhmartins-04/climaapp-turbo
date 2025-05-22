@@ -10,7 +10,7 @@ body {
   max-width: 400px;
   margin: auto;
   padding: 20px;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
@@ -30,4 +30,11 @@ button {
 
 #weatherResult {
   margin-top: 20px;
+}
+
+.forecast {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px;
 }
